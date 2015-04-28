@@ -1,11 +1,11 @@
 CREATE TABLE `AS_countries` (
 `countryId` int(11) NOT NULL auto_increment,
-`countryCode` varchar(2) NOT NULL default '',
-`countryName` varchar(100) NOT NULL default '',
-PRIMARY KEY (`id`)
+`countryCode` varchar(2) NOT NULL,
+`countryName` varchar(100) NOT NULL,
+PRIMARY KEY (`countryId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 -- 
--- Dumping data for table `countries`
+-- Dumping data for table `AS_countries`
 -- 
 INSERT INTO `countries` VALUES (1, 'US', 'United States');
 INSERT INTO `countries` VALUES (2, 'CA', 'Canada');
