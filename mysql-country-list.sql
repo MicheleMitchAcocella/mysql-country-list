@@ -1,12 +1,7 @@
--- raramuridesign.com
--- 2012-02-06
--- use this to import a list of countries into your database
-------------------------------------------------------------
-
-CREATE TABLE `countries` (
-`id` int(11) NOT NULL auto_increment,
-`country_code` varchar(2) NOT NULL default '',
-`country_name` varchar(100) NOT NULL default '',
+CREATE TABLE `AS_countries` (
+`countryId` int(11) NOT NULL auto_increment,
+`countryCode` varchar(2) NOT NULL default '',
+`countryName` varchar(100) NOT NULL default '',
 PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 -- 
@@ -127,7 +122,6 @@ INSERT INTO `countries` VALUES (112, 'KI', 'Kiribati');
 INSERT INTO `countries` VALUES (113, 'KP', 'Korea, Democratic People''s Republic of');
 INSERT INTO `countries` VALUES (114, 'KR', 'Korea, Republic of');
 INSERT INTO `countries` VALUES (115, 'XK', 'Kosovo');
-
 INSERT INTO `countries` VALUES (116, 'KW', 'Kuwait');
 INSERT INTO `countries` VALUES (117, 'KG', 'Kyrgyzstan');
 INSERT INTO `countries` VALUES (118, 'LA', 'Lao People''s Democratic Republic');
